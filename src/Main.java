@@ -15,5 +15,9 @@ public class Main {
         notificaciones[2] = new NotificacionWhatsapp("3109938349");
         notificaciones[2].enviarMensaje("Aun sin novia? te ofrecemos los mejores precios del mercado!");
 
+        //Cambio de yaiza
+        notificaciones[3] = new NotificacionMessenger("@Camilo56");
+        notificaciones[3].enviarMensaje("Holaaaa, que tal?");
+
     }
 }
