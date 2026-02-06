@@ -3,7 +3,7 @@ public abstract class Notificacion {
 
     protected Notificacion(String receptorNotificacion) {
         if(receptorNotificacion == null || receptorNotificacion.isBlank()) {
-            throw new IllegalArgumentException("El receptos es inválido.");
+            throw new IllegalArgumentException("El receptor es inválido.");
         }
         this.receptorNotificacion = receptorNotificacion;
     }
