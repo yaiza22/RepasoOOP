@@ -3,6 +3,12 @@ public class Main {
         CuentaBancaria cuenta1 = new CuentaBancaria("1", 100);
         cuenta1.retirar(100);
         cuenta1.consignar(150);
-        System.out.printf("El saldo de la cuenta es: " + cuenta1.getSaldo());
+        System.out.println("El saldo de la cuenta es: " + cuenta1.getSaldo());
+
+        Notificacion[] notificaciones = new Notificacion[2];
+        notificaciones[0] = new NotificacionCorreo("yaiza.sanchez@unibague.edu.co");
+        notificaciones[1] = new NotificacionSMS("3209623204");
+        notificaciones[0].enviarMensaje("Hola, estimado estudiante.");
+        notificaciones[1].enviarMensaje("¿Sin novia?, en Tigo tenemos los mejores planes de amor y amistad, pasate ya!");
     }
 }
